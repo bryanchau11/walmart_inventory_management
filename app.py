@@ -113,9 +113,9 @@ def get_product_json(id):
 
     headers = {
         "x-rapidapi-host": "walmart.p.rapidapi.com",
-        "x-rapidapi-key": os.getenv("RAPID_API"),
+        "x-rapidapi-key": os.getenv("RapidAPI"),
     }
-
+    # test
     response = requests.request("GET", url, headers=headers, params=querystring).json()
     usItemID = response["data"]["product"]["usItemId"]
     upc = response["data"]["product"]["upc"]
