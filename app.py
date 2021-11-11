@@ -33,23 +33,32 @@ app.register_blueprint(bp)
 def test():
     con = sqlite3.connect("walmart.db")
     cur = con.cursor()
-    test = [
-        [0, 1, 1, "2", "2"],
-        [2, 1, 1, "2", "2"],
-        [3, 1, 1, "2", "2"],
-        [4, 1, 1, "2", "2"],
-        [5, 1, 1, "2", "2"],
-        [6, 1, 1, "2", "2"],
-    ]
+    f = open(
+        "product_table.json",
+    )
+    usItemID = []
+    upc = []
+    storeID = []
+    price = []
+    productName = []
+    data = json.load(f)
+    for i in data["product"]:
+        usItemID.append(i["usItemID"])
+        upc.append(i["upc"])
+        storeID.append(i["storeID"])
+        price.append(i["price"])
+        productName.append(i["productName"])
+    product = list(zip(usItemID, upc, storeID, price, productName))
     cur.execute(
         "create table if not exists product(usItemID INT PRIMARY KEY, UPC INT, storeID INT, price VARCHAR(20), productName VARCHAR(300))"
     )
-    cur.executemany("INSERT INTO product VALUES(?,?,?,?,?)", test)
+    cur.executemany("INSERT INTO product VALUES(?,?,?,?,?)", product)
     con.commit()
     con.close()
 
 
 test()
+
 category = [
     4044,
     4171,
