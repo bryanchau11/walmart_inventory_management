@@ -7,6 +7,7 @@ import requests
 from dotenv import load_dotenv, find_dotenv
 import json
 import random
+import sys
 
 load_dotenv(find_dotenv())
 app = flask.Flask(__name__, static_folder="./build/static")
@@ -21,13 +22,16 @@ bp = flask.Blueprint("bp", __name__, template_folder="./build")
 def index():
     con = sqlite3.connect("walmart.db")
     cur = con.cursor()
+    product_list_header = list(
+        zip([header[0] for header in cur.execute("select * from product").description])
+    )
     product_list = cur.execute("select * from product").fetchall()
     brand_list = cur.execute("select * from brand").fetchall()
     productType_list = cur.execute("select * from productType").fetchall()
     store_list = cur.execute("select * from store").fetchall()
 
     DATA = {
-        "product": product_list,
+        "product": product_list_header + product_list,
         "productType": productType_list,
         "brand": brand_list,
         "store": store_list,
@@ -123,6 +127,15 @@ def create_table():
     con.close()
 
 
+con = sqlite3.connect("walmart.db")
+cur = con.cursor()
+product_list_header = list(
+    [header[0] for header in cur.execute("select * from product").description]
+)
+product_list = cur.execute("select * from product").fetchall()
+# print(product_list_header + product_list)
+
+
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def catch_all(path):
@@ -136,6 +149,26 @@ def catch_all(path):
     """
     return flask.redirect(flask.url_for("bp.index"))
 
+
+@app.route("/execute_command", methods=["POST"])
+def execute_command():
+    command = flask.request.json.get("command")
+    con = sqlite3.connect("walmart.db")
+    cur = con.cursor()
+    result = []
+    try:
+        result = cur.execute(command).fetchall()
+        return flask.jsonify({"result": result, "error": None})
+    except:
+        e = sys.exc_info()[0]
+        return flask.jsonify({"result": result, "error": e})
+
+
+con = sqlite3.connect("walmart.db")
+cur = con.cursor()
+result = []
+result = cur.execute("select * from product where usItemID = 407378056 ").fetchall()
+print(result)
 
 """ 
 category = [
