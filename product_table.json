@@ -3,191 +3,361 @@
         {
             "usItemID": "407378056",
             "upc": "092636323394",
-            "storeID": "100",
-            "price": "$47.54",
-            "productName": "Targus 13\" Magnetic Privacy Screen for Macbook Pro and MacBook Air, Black"
+            "storeID": 1184,
+            "price": 47.54,
+            "productName": "Targus 13\" Magnetic Privacy Screen for Macbook Pro and MacBook Air, Black",
+            "brandName": "Targus",
+            "type": "Laptop Bags & Cases",
+            "offerType": "ONLINE_ONLY",
+            "departmentName": "CONSUMER ELECTRONICS"
         },
         {
             "usItemID": "55500001",
             "upc": "783048998651",
-            "storeID": "100",
-            "price": "$29.99",
-            "productName": "Truly Soft Everyday Sheet Set Grey Microfiber 4-Piece King Sheet Set"
+            "storeID": 1184,
+            "price": 29.99,
+            "productName": "Truly Soft Everyday Sheet Set Grey Microfiber 4-Piece King Sheet Set",
+            "brandName": "Truly Soft",
+            "type": "Bed Sheets",
+            "offerType": "ONLINE_ONLY",
+            "departmentName": "BEDDING"
         },
         {
             "usItemID": "596140033",
             "upc": "766686937268",
-            "storeID": "100",
-            "price": "$10.19",
-            "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 25.4\" Length"
+            "storeID": 3074,
+            "price": 10.19,
+            "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 25.4\" Length",
+            "brandName": "Mainstays",
+            "type": "Window Blinds",
+            "offerType": "ONLINE_ONLY",
+            "departmentName": "HOME DECOR"
         },
         {
             "usItemID": "363845482",
             "upc": "766686937312",
-            "storeID": "100",
-            "price": "$12.57",
-            "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 29.4\" L"
+            "storeID": 3074,
+            "price": 12.57,
+            "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 29.4\" L",
+            "brandName": "Mainstays",
+            "type": "Window Blinds",
+            "offerType": "ONLINE_ONLY",
+            "departmentName": "HOME DECOR"
         },
         {
             "usItemID": "515619521",
             "upc": null,
-            "storeID": "100",
-            "price": "$54.35",
-            "productName": "Your Zone Kids Bin Storage and Book Case, White Finish"
+            "storeID": 3621,
+            "price": 54.35,
+            "productName": "Your Zone Kids Bin Storage and Book Case, White Finish",
+            "brandName": "Your Zone",
+            "type": "Bookcases",
+            "offerType": "ONLINE_ONLY",
+            "departmentName": "FURNITURE"
         },
         {
             "usItemID": "475271390",
             "upc": "630996130186",
-            "storeID": "100",
-            "price": "$17.99",
-            "productName": "Bluey - Heeler 4WD Family Vehicle - Four 2.5-3\" Figures & 1 Car Play Vehicle"
-        },
-        {
-            "usItemID": "45825256",
-            "upc": "071662068745",
-            "storeID": "100",
-            "price": "$14.97",
-            "productName": "Crayola Colossal Creativity Tub, Art and Craft Supplies, Art Set Gift, 90 Pieces"
+            "storeID": 1184,
+            "price": 18.88,
+            "productName": "Bluey - Heeler 4WD Family Vehicle - Four 2.5-3\" Figures & 1 Car Play Vehicle",
+            "brandName": "Bluey",
+            "type": "Play Vehicles",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "TOYS"
         },
         {
             "usItemID": "109930925",
             "upc": "050743642265",
-            "storeID": "100",
-            "price": "$44.97",
-            "productName": "Little Tikes Easy Store 3-Foot Trampoline, with Hand Rail, Blue"
+            "storeID": 3071,
+            "price": 42.69,
+            "productName": "Little Tikes Easy Store 3-Foot Trampoline, with Hand Rail, Blue",
+            "brandName": "Little Tikes",
+            "type": "Trampolines",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "TOYS"
         },
         {
             "usItemID": "675140113",
             "upc": "194356051011",
-            "storeID": "100",
-            "price": "$12.97",
-            "productName": "Discovery Glowing Gemstone Dig, Art & Craft Kits For Boys & Girls, Kids & Teens"
+            "storeID": 2584,
+            "price": 12.97,
+            "productName": "Discovery Glowing Gemstone Dig, Art & Craft Kits For Boys & Girls, Kids & Teens",
+            "brandName": "Discovery",
+            "type": "Art & Craft Kits",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "ARTS CRAFTS SEWING"
         },
         {
             "usItemID": "42424706",
             "upc": "012587787502",
-            "storeID": "100",
-            "price": "$13.72",
-            "productName": "Glad ForceFlex Tall Kitchen Trash Bags, 13 Gallon, 80 Bags (Gain Original Scent, Febreze Freshness)"
+            "storeID": 3070,
+            "price": 13.72,
+            "productName": "Glad ForceFlex Tall Kitchen Trash Bags, 13 Gallon, 80 Bags (Gain Original Scent, Febreze Freshness)",
+            "brandName": "Glad",
+            "type": "Garbage Bags",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "HOUSEHOLD PAPER GOODS"
         },
         {
             "usItemID": "795925903",
             "upc": "037000486657",
-            "storeID": "100",
-            "price": "$5.94",
-            "productName": "Microban 24 Hour Disinfectant Sanitizing Spray, Fresh Scent, 15 Fl Oz"
+            "storeID": 1373,
+            "price": 5.94,
+            "productName": "Microban 24 Hour Disinfectant Sanitizing Spray, Fresh Scent, 15 Fl Oz",
+            "brandName": "Microban",
+            "type": "Disinfectant Sprays",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "HOUSEHOLD CHEMICALS/SUPP"
         },
         {
             "usItemID": "14898365",
             "upc": "044600302089",
-            "storeID": "100",
-            "price": "$9.98",
-            "productName": "Clorox Disinfecting Wipes, (225 Count Value Pack), Crisp Lemon and Fresh Scent - 3 Pack - 75 Count Each"
+            "storeID": 3067,
+            "price": 9.98,
+            "productName": "Clorox Disinfecting Wipes, (225 Count Value Pack), Crisp Lemon and Fresh Scent - 3 Pack - 75 Count Each",
+            "brandName": "Clorox",
+            "type": "Cleaning Cloths & Wipes",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "HOUSEHOLD CHEMICALS/SUPP"
         },
         {
             "usItemID": "34720573",
             "upc": "035000269188",
-            "storeID": "100",
-            "price": "$3.97",
-            "productName": "Colgate Irish Spring Body Wash for Men, Original, 18 fl. Oz."
+            "storeID": 1184,
+            "price": 3.97,
+            "productName": "Colgate Irish Spring Body Wash for Men, Original, 18 fl. Oz.",
+            "brandName": "Irish Spring",
+            "type": "Body Washes & Shower Gels",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "PERSONAL CARE"
         },
         {
             "usItemID": "2304198",
             "upc": "037000324942",
-            "storeID": "100",
-            "price": "$5.47",
-            "productName": "Always Ultra Thin Pads without Wings, Unscented, Long, Size 2, 40 Ct"
+            "storeID": 3070,
+            "price": 5.77,
+            "productName": "Always Ultra Thin Pads without Wings, Unscented, Long, Size 2, 40 Ct",
+            "brandName": "Always",
+            "type": "Sanitary Napkins",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "PERSONAL CARE"
         },
         {
             "usItemID": "908197301",
             "upc": "037000787945",
-            "storeID": "100",
-            "price": "$6.97",
-            "productName": "Crest Pro Health Smooth Formula Toothpaste, Clean Mint, 4.6 Oz, 3 pk"
+            "storeID": 3067,
+            "price": 6.97,
+            "productName": "Crest Pro Health Smooth Formula Toothpaste, Clean Mint, 4.6 Oz, 3 pk",
+            "brandName": "Crest",
+            "type": "Toothpastes",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "PERSONAL CARE"
         },
         {
             "usItemID": "16940601",
             "upc": "310158084143",
-            "storeID": "100",
-            "price": "$10.68",
-            "productName": "Sensodyne Extra Whitening Sensitive Teeth Whitening Toothpaste, 4 Oz, 2 Pack"
+            "storeID": 2360,
+            "price": 10.68,
+            "productName": "Sensodyne Extra Whitening Sensitive Teeth Whitening Toothpaste, 4 Oz, 2 Pack",
+            "brandName": "Sensodyne",
+            "type": "Toothpastes",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "PERSONAL CARE"
         },
         {
             "usItemID": "38773089",
             "upc": "310158830863",
-            "storeID": "100",
-            "price": "$10.68",
-            "productName": "Sensodyne Pronamel Fresh Breath Enamel Sensitive Toothpaste, Fresh Wave, 4 Oz, 2 Pack"
+            "storeID": 3621,
+            "price": 10.68,
+            "productName": "Sensodyne Pronamel Fresh Breath Enamel Sensitive Toothpaste, Fresh Wave, 4 Oz, 2 Pack",
+            "brandName": "Sensodyne",
+            "type": "Toothpastes",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "PERSONAL CARE"
         },
         {
             "usItemID": "35520771",
             "upc": "034223421847",
-            "storeID": "100",
-            "price": "$22.97",
-            "productName": "Igloo 5-Gallon Heavy-Duty Beverage Cooler - Orange"
+            "storeID": 3067,
+            "price": 22.97,
+            "productName": "Igloo 5-Gallon Heavy-Duty Beverage Cooler - Orange",
+            "brandName": "Igloo",
+            "type": "Beverage Coolers",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "SPORTING GOODS"
         },
         {
             "usItemID": "650545386",
             "upc": "793676097107",
-            "storeID": "100",
-            "price": "$68.00",
-            "productName": "SplatRBall Full and Semi Auto Electric Rechargeable Soft Water Bead Blaster Kit"
+            "storeID": 3071,
+            "price": 68,
+            "productName": "SplatRBall Full and Semi Auto Electric Rechargeable Soft Water Bead Blaster Kit",
+            "brandName": "SPLATRBALL",
+            "type": "Air Guns",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "SPORTING GOODS"
         },
         {
             "usItemID": "17808715",
             "upc": "094733070102",
-            "storeID": "100",
-            "price": "$5.72",
-            "productName": "HotHands 10 Hour Hand Warmer | 10 Pair Pack"
+            "storeID": 3070,
+            "price": 5.72,
+            "productName": "HotHands 10 Hour Hand Warmer | 10 Pair Pack",
+            "brandName": "HotHands",
+            "type": "Chemical Hand & Foot Warmers",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "SPORTING GOODS"
         },
         {
             "usItemID": "306203294",
             "upc": "041137027416",
-            "storeID": "100",
-            "price": "$9.48",
-            "productName": "Duraflame Firestart Gold Ultra Premium Fire Starters 24-Pk"
+            "storeID": 2360,
+            "price": 9.48,
+            "productName": "Duraflame Firestart Gold Ultra Premium 4.5oz Fire Starters 24-Pk",
+            "brandName": "Duraflame",
+            "type": "Fire Starters",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "HARDWARE"
         },
         {
             "usItemID": "706203065",
             "upc": "190198806116",
-            "storeID": "100",
-            "price": "$169.00",
-            "productName": "Apple Watch Series 3 GPS - 38mm - Sport Band - Aluminum Case"
+            "storeID": 2584,
+            "price": 169,
+            "productName": "Apple Watch Series 3 GPS - 38mm - Sport Band - Aluminum Case",
+            "brandName": "Apple",
+            "type": "Smart Watches",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "WIRELESS"
         },
         {
             "usItemID": "834343104",
             "upc": "689344403854",
-            "storeID": "100",
-            "price": "$220.00",
-            "productName": "Spalding 54\" Shatter-proof Polycarbonate Exactaheight\u00ae Portable Basketball Hoop"
+            "storeID": 1373,
+            "price": 220,
+            "productName": "Spalding 54\" Shatter-proof Polycarbonate Exactaheight\u00ae Portable Basketball Hoop",
+            "brandName": "Spalding",
+            "type": "Portable Basketball Systems",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "SPORTING GOODS"
         },
         {
             "usItemID": "383634749",
             "upc": "841015160415",
-            "storeID": "100",
-            "price": "$22.16",
-            "productName": "Ozark Trail Oversized Mesh Chair with Cooler, Black, Adult"
+            "storeID": 3070,
+            "price": 24.97,
+            "productName": "Ozark Trail Oversized Mesh Chair with Cooler, Black, Adult",
+            "brandName": "Ozark Trail",
+            "type": "Camping Chairs",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "SPORTING GOODS"
+        },
+        {
+            "usItemID": "45825256",
+            "upc": "071662068745",
+            "storeID": 3621,
+            "price": 14.97,
+            "productName": "Crayola Colossal Creativity Tub, Art and Craft Supplies, Art Set Gift, 90 Pieces",
+            "brandName": "Crayola",
+            "type": "Art Sets",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "STATIONERY"
         },
         {
             "usItemID": "698410145",
             "upc": "071662134556",
-            "storeID": "100",
-            "price": "$14.98",
-            "productName": "Crayola Crayon and Storage Tub, 168 Crayons, Featuring Colors of the World Crayon Colors"
+            "storeID": 3621,
+            "price": 14.98,
+            "productName": "Crayola Crayon and Storage Tub, 168 Crayons, Featuring Colors of the World Crayon Colors",
+            "brandName": "Crayola",
+            "type": "Crayons",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "STATIONERY"
         },
         {
             "usItemID": "489882644",
             "upc": null,
-            "storeID": "100",
-            "price": "$1.88",
-            "productName": "Pen + Gear No. 2 Wood Pencils, Sharpened, 48 Count"
+            "storeID": 3074,
+            "price": 1.88,
+            "productName": "Pen + Gear No. 2 Wood Pencils, Sharpened, 48 Count",
+            "brandName": "Pen+Gear",
+            "type": "Pencils",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "STATIONERY"
         },
         {
             "usItemID": "14940220",
             "upc": "071662040123",
-            "storeID": "100",
-            "price": "$1.84",
-            "productName": "Crayola Colored Pencil Set, Assorted Colors, 12 Count, School Supplies, Beginner Child"
+            "storeID": 2360,
+            "price": 1.84,
+            "productName": "Crayola Colored Pencil Set, Assorted Colors, 12 Count, School Supplies, Beginner Child",
+            "brandName": "Crayola",
+            "type": "Art Pencils",
+            "offerType": "ONLINE_AND_STORE",
+            "departmentName": "STATIONERY"
+        }
+    ],
+    "store": [
+        {
+            "storeID": 2584,
+            "storeAddress": "4375 Lawrenceville Hwy, Tucker, GA, 30084",
+            "storePhone": "770-939-2671",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 3067,
+            "storeAddress": "4975 Jimmy Carter Blvd, Norcross, GA, 30093",
+            "storePhone": "770-225-9882",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 3071,
+            "storeAddress": "3201 Tucker Norcross Rd, Tucker, GA, 30084",
+            "storePhone": "770-225-6010",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 1373,
+            "storeAddress": "4004 Lawrenceville Hwy Nw, Lilburn, GA, 30047",
+            "storePhone": "770-921-9224",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 2154,
+            "storeAddress": "2635 Pleasant Hill Rd, Duluth, GA, 30096",
+            "storePhone": "770-418-0162",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 3074,
+            "storeAddress": "3059 Lawrenceville Hwy, Lawrenceville, GA, 30044",
+            "storePhone": "678-259-0050",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 3070,
+            "storeAddress": "5025 Winters Chapel Rd, Dunwoody, GA, 30360",
+            "storePhone": "770-280-0193",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 1184,
+            "storeAddress": "1825 Rockbridge Rd, Stone Mountain, GA, 30087",
+            "storePhone": "770-469-8660",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 3621,
+            "storeAddress": "1871 Chamblee Tucker Rd, Chamblee, GA, 30341",
+            "storePhone": "770-455-0422",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
+        },
+        {
+            "storeID": 2360,
+            "storeAddress": "4725 Ashford Dunwoody Rd, Dunwoody, GA, 30338",
+            "storePhone": "770-395-0199",
+            "storeHour": "Mon-Sun: 6 am to 11 pm"
         }
     ]
 }

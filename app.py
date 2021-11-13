@@ -6,6 +6,7 @@ import sqlite3
 import requests
 from dotenv import load_dotenv, find_dotenv
 import json
+import random
 
 load_dotenv(find_dotenv())
 app = flask.Flask(__name__, static_folder="./build/static")
@@ -18,8 +19,19 @@ bp = flask.Blueprint("bp", __name__, template_folder="./build")
 
 @bp.route("/index")
 def index():
-    # TODO: insert the data fetched by your app main page here as a JSON
-    DATA = {"list": test()}
+    con = sqlite3.connect("walmart.db")
+    cur = con.cursor()
+    product_list = cur.execute("select * from product").fetchall()
+    brand_list = cur.execute("select * from brand").fetchall()
+    productType_list = cur.execute("select * from productType").fetchall()
+    store_list = cur.execute("select * from store").fetchall()
+
+    DATA = {
+        "product": product_list,
+        "productType": productType_list,
+        "brand": brand_list,
+        "store": store_list,
+    }
     data = json.dumps(DATA)
     return flask.render_template(
         "index.html",
@@ -29,8 +41,8 @@ def index():
 
 app.register_blueprint(bp)
 
-
-def test():
+###
+def create_table():
     con = sqlite3.connect("walmart.db")
     cur = con.cursor()
     f = open(
@@ -41,24 +53,91 @@ def test():
     storeID = []
     price = []
     productName = []
+    brandName = []
+    type = []
+    offerType = []
+    departmentName = []
+
     data = json.load(f)
     for i in data["product"]:
+
+        # Brand table
+        brandName.append(i["brandName"])
+
+        # ProductType table
+
+        type.append(i["type"])
+        offerType.append(i["offerType"])
+        departmentName.append(i["departmentName"])
+
+    # Store table
+    storeID = []
+    storeAddress = []
+    storePhone = []
+    storeHour = []
+    for i in data["store"]:
+        storeID.append(i["storeID"])
+        storeAddress.append(i["storeAddress"])
+        storePhone.append(i["storePhone"])
+        storeHour.append(i["storeHour"])
+
+    # Create table product
+
+    print(json.dumps(data["product"], indent=4, sort_keys=True))
+
+    for i in data["product"]:
+        # Product table
         usItemID.append(i["usItemID"])
         upc.append(i["upc"])
         storeID.append(i["storeID"])
         price.append(i["price"])
         productName.append(i["productName"])
+
     product = list(zip(usItemID, upc, storeID, price, productName))
     cur.execute(
-        "create table if not exists product(usItemID INT PRIMARY KEY, UPC INT, storeID INT, price VARCHAR(20), productName VARCHAR(300))"
+        "create table if not exists product(usItemID INT PRIMARY KEY, UPC INT, storeID INT, price VARCHAR(20), productName VARCHAR(500))"
     )
     cur.executemany("INSERT INTO product VALUES(?,?,?,?,?)", product)
+
+    # Create table brand
+    cur.execute("create table if not exists brand(brandName VARCHAR(300) PRIMARY KEY)")
+    brand = list(zip(set(brandName)))
+
+    cur.executemany("INSERT INTO brand VALUES(?)", brand)
+
+    # Create table productType
+    productType = list(zip(type, offerType, departmentName))
+    cur.execute(
+        "create table if not exists productType(type VARCHAR(50), offerType VARCHAR(50), departmentName VARCHAR(100))"
+    )
+    cur.executemany("INSERT INTO productType VALUES(?,?,?)", productType)
+
+    # Create table store
+
+    store = list(zip(storeID, storeAddress, storePhone, storeHour))
+    cur.execute(
+        "create table if not exists store(storeID INT PRIMARY KEY, storeAddress VARCHAR(200), storePhone VARCHAR(20), storeHour VARCHAR(50))"
+    )
+    cur.executemany("INSERT INTO store VALUES(?,?,?,?)", store)
     con.commit()
     con.close()
 
 
-test()
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def catch_all(path):
+    """[summary]
 
+    Args:
+        path ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
+    return flask.redirect(flask.url_for("bp.index"))
+
+
+""" 
 category = [
     4044,
     4171,
@@ -80,14 +159,12 @@ usItemID = [
     363845482,
     515619521,
     475271390,
-    45825256,
     109930925,
     675140113,
     42424706,
     795925903,
     14898365,
     34720573,
-    38773089,
     2304198,
     908197301,
     16940601,
@@ -119,28 +196,89 @@ def get_product_json(id):
     response = requests.request("GET", url, headers=headers, params=querystring).json()
     usItemID = response["data"]["product"]["usItemId"]
     upc = response["data"]["product"]["upc"]
-    storeID = response["data"]["product"]["location"]["storeIds"][0]
-    price = response["data"]["product"]["priceInfo"]["currentPrice"]["priceString"]
+    # storeID = response["data"]["product"]["location"]["storeIds"][0]
+    price = response["data"]["product"]["priceInfo"]["currentPrice"]["price"]
     productName = response["data"]["product"]["name"]
-    # brand = response["data"]["product"]["brand"]
-    return (usItemID, upc, storeID, price, productName)
+    brand = response["data"]["product"]["brand"]
+    type = response["data"]["product"]["type"]
+    offerType = response["data"]["product"]["offerType"]
+    departmentName = response["data"]["product"]["departmentName"]
+    return (usItemID, upc, price, productName, brand, type, offerType, departmentName)
 
 
-""" 
 productData = {}
 productData["product"] = []
+storeID = [2584, 3067, 3071, 1373, 2154, 3074, 3070, 1184, 3621, 2360]
 
+productData = {}
+productData["product"] = []
+ 
 for i in usItemID:
-    itemID, upc, storeID, price, productName = get_product_json(i)
+    (
+        itemID,
+        upc,
+        price,
+        productName,
+        brand,
+        type,
+        offerType,
+        departmentName,
+    ) = get_product_json(i)
     productData["product"].append(
         {
             "usItemID": itemID,
             "upc": upc,
-            "storeID": storeID,
+            "storeID": random.choice(storeID),
             "price": price,
             "productName": productName,
+            "brand": brand,
+            "type": type,
+            "offerType": offerType,
+            "departmentName": departmentName,
         }
     )
+
+
+def get_store_info(id):
+    url = "https://walmart.p.rapidapi.com/stores/list-preferred"
+
+    querystring = {"postalCode": "30093", "preferredStoreId": f"{id}"}
+
+    headers = {
+        "x-rapidapi-host": "walmart.p.rapidapi.com",
+        "x-rapidapi-key": os.getenv("RapidAPI"),
+    }
+
+    response = requests.request("GET", url, headers=headers, params=querystring).json()
+    storeID = id
+    address = response["preferredStore"]["address"]
+    storeAddress = (
+        address["address1"]
+        + ", "
+        + address["city"]
+        + ", "
+        + address["state"]
+        + ", "
+        + address["postalCode"]
+    )
+    storePhone = response["preferredStore"]["phone"]
+    storeHour = "Mon-Sun: 6 am to 11 pm"
+    return (storeID, storeAddress, storePhone, storeHour)
+
+
+productData["Store"] = []
+
+for i in storeID:
+    storeID, storeAddress, storePhone, storeHour = get_store_info(i)
+    productData["Store"].append(
+        {
+            "storeID": storeID,
+            "storeAddress": storeAddress,
+            "storePhone": storePhone,
+            "storeHour": storeHour,
+        }
+    )
+
 with open("product_table.json", "w") as fp:
     json.dump(productData, fp)
 """
@@ -151,7 +289,8 @@ def main():
     return flask.redirect(flask.url_for("bp.index"))
 
 
-app.run(
-    host=os.getenv("IP", "0.0.0.0"),
-    port=int(os.getenv("PORT", 8081)),
-)
+if __name__ == "__main__":
+    app.run(
+        host=os.getenv("IP", "0.0.0.0"),
+        port=int(os.getenv("PORT", 8081)),
+    )
