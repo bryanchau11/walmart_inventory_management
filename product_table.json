@@ -359,5 +359,226 @@
             "storePhone": "770-395-0199",
             "storeHour": "Mon-Sun: 6 am to 11 pm"
         }
+    ],
+    "vendor": [
+        {
+            "sellerName": "Targus",
+            "sellerReviewCount": 20
+        },
+        {
+            "sellerName": "Toms Bed and Furniture",
+            "sellerReviewCount": 18
+        },
+        {
+            "sellerName": "Mainstays",
+            "sellerReviewCount": 38
+        },
+        {
+            "sellerName": "Decor for Kids",
+            "sellerReviewCount": 35
+        },
+        {
+            "sellerName": "Bluey Toys",
+            "sellerReviewCount": 6
+        },
+        {
+            "sellerName": "Little Tikes",
+            "sellerReviewCount": 5
+        },
+        {
+            "sellerName": "Discovery Ganes",
+            "sellerReviewCount": 31
+        },
+        {
+            "sellerName": "Glad Products",
+            "sellerReviewCount": 98
+        },
+        {
+            "sellerName": "Microban Cleaning",
+            "sellerReviewCount": 54
+        },
+        {
+            "sellerName": "Clorox Supplies",
+            "sellerReviewCount": 23
+        },
+        {
+            "sellerName": "IrishSpring Products",
+            "sellerReviewCount": 6
+        },
+        {
+            "sellerName": "Always Sanitation",
+            "sellerReviewCount": 8
+        },
+        {
+            "sellerName": "Crest Dental Products",
+            "sellerReviewCount": 67
+        },
+        {
+            "sellerName": "Sensodyne Dental Care",
+            "sellerReviewCount": 53
+        },
+        {
+            "sellerName": "Outdoor Coolers",
+            "sellerReviewCount": 78
+        },
+        {
+            "sellerName": "SplatRBall Guns",
+            "sellerReviewCount": 15
+        },
+        {
+            "sellerName": "Electronic Warmers",
+            "sellerReviewCount": 43
+        },
+        {
+            "sellerName": "DuraFlame ",
+            "sellerReviewCount": 21
+        },
+        {
+            "sellerName": "Apple",
+            "sellerReviewCount": 455
+        },
+        {
+            "sellerName": "Spalding Sports Goods",
+            "sellerReviewCount": 3
+        },
+        {
+            "sellerName": "Ozark Campe Goods",
+            "sellerReviewCount": 5
+        },
+        {
+            "sellerName": "Crayola",
+            "sellerReviewCount": 60
+        },
+        {
+            "sellerName": "Pen & Gear Utensils",
+            "sellerReviewCount": 32
+        }
+    ],
+    "customer": [
+        {
+            "customerID": 45634,
+            "customerName": "Steve",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 34524,
+            "customerName": "Greg",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 45375,
+            "customerName": "Time",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 65325,
+            "customerName": "Mark",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 65543,
+            "customerName": "Billy",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 76424,
+            "customerName": "Francis",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 55434,
+            "customerName": "Roger",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 56345,
+            "customerName": "Claus",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 76454,
+            "customerName": "Timothy",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 23456,
+            "customerName": "Helen",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 12464,
+            "customerName": "Hailey",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 43435,
+            "customerName": "David",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 12375,
+            "customerName": "Aaron",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 87546,
+            "customerName": "Randy",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 23894,
+            "customerName": "Eric",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 54386,
+            "customerName": "Kyle",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 34754,
+            "customerName": "Kenneth",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 31385,
+            "customerName": "Shelly",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 42854,
+            "customerName": "Jake",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 94360,
+            "customerName": "Paul",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 13845,
+            "customerName": "Logan",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 43472,
+            "customerName": "Derrick",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 63734,
+            "customerName": "Lenda",
+            "paidMemberShip": "True"
+        },
+        {
+            "customerID": 12365,
+            "customerName": "Louis",
+            "paidMemberShip": "False"
+        },
+        {
+            "customerID": 53824,
+            "customerName": "Peter",
+            "paidMemberShip": "True"
+        }
     ]
 }
