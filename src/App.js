@@ -14,6 +14,7 @@ function App() {
       <h1>Product Table</h1>
       <table>
         {args.product.map((i) => (
+<<<<<<< HEAD
           <tr>
             <td>{i[0]} </td>
             <td>{i[1]}</td>
@@ -21,6 +22,18 @@ function App() {
             <td>{i[3]}</td>
             <td>{i[4]}</td>
           </tr>
+=======
+          <li>
+            {i[0]} {'      '} | {'      '}
+            {i[1]}
+            {'      '} | {'      '}
+            {i[2]}
+            {'      '} | {'      '}
+            {i[3]}
+            {'      '} | {'      '}
+            {i[4]}{' '}
+          </li>
+>>>>>>> origin/main
         ))}
       </table>
       <h1>Product Type Table</h1>
