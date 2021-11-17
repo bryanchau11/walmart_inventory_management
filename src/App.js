@@ -12,13 +12,17 @@ function App() {
   return (
     <div>
       <h1>Product Table</h1>
-      <ul>
+      <table>
         {args.product.map((i) => (
-          <li>
-            {i[0]} | {i[1]} | {i[2]} | {i[3]} | {i[4]}{' '}
-          </li>
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+            <td>{i[2]}</td>
+            <td>{i[3]}</td>
+            <td>{i[4]}</td>
+          </tr>
         ))}
-      </ul>
+      </table>
       <h1>Product Type Table</h1>
       <ul>
         {args.productType.map((i) => (
