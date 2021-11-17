@@ -8,6 +8,8 @@ from dotenv import load_dotenv, find_dotenv
 import json
 import random
 import sys
+import csv
+from csv import reader
 
 load_dotenv(find_dotenv())
 app = flask.Flask(__name__, static_folder="./build/static")
@@ -27,9 +29,29 @@ def index():
     )
     product_list = cur.execute("select * from product").fetchall()
     product_list.insert(0, tuple(product_list_header))
+    #
+    brand_list_header = list(
+        zip([header[0] for header in cur.execute("select * from brand").description])
+    )
     brand_list = cur.execute("select * from brand").fetchall()
+    brand_list.insert(0, tuple(brand_list_header))
+    #
+    productType_list_header = list(
+        zip(
+            [
+                header[0]
+                for header in cur.execute("select * from productType").description
+            ]
+        )
+    )
     productType_list = cur.execute("select * from productType").fetchall()
+    productType_list.insert(0, tuple(productType_list_header))
+    #
+    store_list_header = list(
+        zip([header[0] for header in cur.execute("select * from store").description])
+    )
     store_list = cur.execute("select * from store").fetchall()
+    store_list.insert(0, tuple(store_list_header))
 
     DATA = {
         "product": product_list,
@@ -47,6 +69,36 @@ def index():
 app.register_blueprint(bp)
 
 ###
+
+con = sqlite3.connect("walmart.db")
+cur = con.cursor()
+f = open(
+    "product_table.json",
+)
+data = json.load(f)
+customerID = []
+customerName = []
+paidMemberShip = []
+for i in data["customer"]:
+    customerID.append(i["customerID"])
+    customerName.append(i["customerName"])
+    paidMemberShip.append(i["paidMemberShip"])
+
+
+def checkDup(list):
+
+    dict = {}
+    for i in list:
+        if i in dict:
+            dict[i] += 1
+        else:
+            dict[i] = 1
+    print(dict)
+
+
+checkDup(customerID)
+
+
 def create_table():
     con = sqlite3.connect("walmart.db")
     cur = con.cursor()
@@ -86,9 +138,24 @@ def create_table():
         storePhone.append(i["storePhone"])
         storeHour.append(i["storeHour"])
 
-    # Create table product
+    # Vendor table
+    sellerName = []
+    sellerReviewCount = []
+    for i in data["vendor"]:
+        sellerName.append(i["sellerName"])
+        sellerReviewCount.append(i["sellerReviewCount"])
 
-    print(json.dumps(data["product"], indent=4, sort_keys=True))
+    # Customer Table
+    customerID = []
+    customerName = []
+    paidMemberShip = []
+    for i in data["customer"]:
+        customerID.append(i["customerID"])
+        customerName.append(i["customerName"])
+        paidMemberShip.append(i["paidMemberShip"])
+
+    # Create table product
+    # print(json.dumps(data["product"], indent=4, sort_keys=True))
 
     for i in data["product"]:
         # Product table
@@ -102,20 +169,20 @@ def create_table():
     cur.execute(
         "create table if not exists product(usItemID INT PRIMARY KEY, UPC INT, storeID INT, price INT, productName VARCHAR(500))"
     )
-    cur.executemany("INSERT INTO product VALUES(?,?,?,?,?)", product)
+    # cur.executemany("INSERT INTO product VALUES(?,?,?,?,?)", product)
 
     # Create table brand
     cur.execute("create table if not exists brand(brandName VARCHAR(300) PRIMARY KEY)")
     brand = list(zip(set(brandName)))
 
-    cur.executemany("INSERT INTO brand VALUES(?)", brand)
+    # cur.executemany("INSERT INTO brand VALUES(?)", brand)
 
     # Create table productType
     productType = list(zip(type, offerType, departmentName))
     cur.execute(
         "create table if not exists productType(type VARCHAR(50), offerType VARCHAR(50), departmentName VARCHAR(100))"
     )
-    cur.executemany("INSERT INTO productType VALUES(?,?,?)", productType)
+    # cur.executemany("INSERT INTO productType VALUES(?,?,?)", productType)
 
     # Create table store
 
@@ -123,9 +190,60 @@ def create_table():
     cur.execute(
         "create table if not exists store(storeID INT PRIMARY KEY, storeAddress VARCHAR(200), storePhone VARCHAR(20), storeHour VARCHAR(50))"
     )
-    cur.executemany("INSERT INTO store VALUES(?,?,?,?)", store)
+    # cur.executemany("INSERT INTO store VALUES(?,?,?,?)", store)
+
+    # Create table vendor
+    vendor = list(zip(sellerName, sellerReviewCount))
+    cur.execute(
+        "create table if not exists vendor(sellerName VARCHAR(100) PRIMARY KEY, sellerReviewCount INT)"
+    )
+    # cur.executemany("INSERT INTO vendor VALUES(?,?)", vendor)
+
+    # Create table customer
+    customer = list(zip(customerID, customerName, paidMemberShip))
+    cur.execute(
+        "create table if not exists customer(customerID INT PRIMARY KEY, customerName VARCHAR(20), paidMemberShip VARCHAR(10))"
+    )
+    # cur.executemany("INSERT INTO customer VALUES(?,?,?)", customer)
+
+    # Create table purchase
+    purchase = [
+        [i, random.choice(usItemID), random.randint(3, 100)] for i in customerID
+    ]
+    cur.execute(
+        "create table if not exists purchase(customerID INT PRIMARY KEY, usItemID INT, quantity INT, FOREIGN KEY(customerID) REFERENCES customer(customerID), FOREIGN KEY(usItemID) REFERENCES product(usItemID))"
+    )
+    # cur.executemany("INSERT INTO purchase VALUES(?,?,?)", purchase)
     con.commit()
     con.close()
+
+    # Create table has_type
+    has_type = list(zip(usItemID, type))
+    cur.execute(
+        "create table if not exists has_type(usItemID INT PRIMARY KEY, type VARCHAR(50),FOREIGN KEY(usItemID) REFERENCES product(usItemID), FOREIGN KEY(type) REFERENCES productType(type))"
+    )
+    cur.executemany("INSERT INTO has_type VALUES(?,?)", has_type)
+
+    # Create table is_under
+    is_under = list(zip(usItemID, brandName))
+    cur.execute(
+        "create table if not exists is_under(usItemID INT PRIMARY KEY, brandName VARCHAR(300),FOREIGN KEY(usItemID) REFERENCES product(usItemID), FOREIGN KEY(brandName) REFERENCES brand(brandName))"
+    )
+    cur.executemany("INSERT INTO is_under VALUES(?,?)", is_under)
+
+    # Create table is_visited
+    is_visited = [[i, random.choice(storeID)] for i in customerID]
+    cur.execute(
+        "create table if not exists is_visited(customerID INT PRIMARY KEY, storeID INT, FOREIGN KEY(customerID) REFERENCES customer(customerID), FOREIGN KEY(storeID) REFERENCES store(storeID))"
+    )
+    cur.executemany("INSERT INTO is_visited VALUES(?,?)", is_visited)
+
+    # Create table is_paid
+    is_paid = [[i, random.choice(sellerName)] for i in storeID]
+    cur.execute(
+        "create table if not exists is_paid(storeID INT PRIMARY KEY, sellerName VARCHAR(100), FOREIGN KEY(sellerName) REFERENCES vendor(sellerName), FOREIGN KEY(storeID) REFERENCES store(storeID))"
+    )
+    cur.executemany("INSERT INTO is_paid VALUES(?,?)", is_paid)
 
 
 """
@@ -315,6 +433,37 @@ for i in storeID:
 
 with open("product_table.json", "w") as fp:
     json.dump(productData, fp)
+"""
+""" 
+# VENDOR
+vendor = []
+with open("vendorlist.csv", "r") as read_obj:
+    csv_reader = reader(read_obj)
+    header = next(csv_reader)
+    # Check file as empty
+    if header != None:
+        # Iterate over each row after the header in the csv
+        for row in csv_reader:
+            # row variable is a list that represents a row in csv
+            vendor.append({"sellerName": row[0], "sellerReviewCount": row[1]})
+print(vendor)
+"""
+
+"""customer 
+customer = []
+with open("customerlist.csv", "r") as read_obj:
+    csv_reader = reader(read_obj)
+    header = next(csv_reader)
+    # Check file as empty
+    if header != None:
+        # Iterate over each row after the header in the csv
+        for row in csv_reader:
+            # row variable is a list that represents a row in csv
+            customer.append(
+                {"customerID": row[0], "customerName": row[1], "paidMemberShip": row[2]}
+            )
+print(customer)
+
 """
 
 

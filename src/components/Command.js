@@ -1,7 +1,7 @@
 /* eslint-disable array-callback-return */
 import { useParams, Link } from 'react-router-dom';
 import { React, useState, useEffect, useRef } from 'react';
-
+import '../App.css';
 function Command() {
   const { command } = useParams();
   const [result, setResult] = useState([]);
@@ -29,15 +29,15 @@ function Command() {
       This is your sql command: {command}
       {error}
       <br />
-      <ul>
+      <table className="walmart">
         {result.map((item) => (
-          <li>
+          <tr>
             {item.map((i) => (
-              <div>{i} |</div>
+              <td>{i}</td>
             ))}
-          </li>
+          </tr>
         ))}
-      </ul>
+      </table>
     </div>
   );
 }

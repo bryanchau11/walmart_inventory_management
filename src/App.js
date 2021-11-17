@@ -12,42 +12,46 @@ function App() {
   return (
     <div>
       <h1>Product Table</h1>
-      <ul>
+      <table className="walmart">
         {args.product.map((i) => (
-          <li>
-            {i[0]} {'      '} | {'      '}
-            {i[1]}
-            {'      '} | {'      '}
-            {i[2]}
-            {'      '} | {'      '}
-            {i[3]}
-            {'      '} | {'      '}
-            {i[4]}{' '}
-          </li>
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+            <td>{i[2]}</td>
+            <td>{i[3]}</td>
+            <td>{i[4]}</td>
+          </tr>
         ))}
-      </ul>
+      </table>
       <h1>Product Type Table</h1>
-      <ul>
+      <table className="walmart">
         {args.productType.map((i) => (
-          <li>
-            {i[0]} | {i[1]} | {i[2]}
-          </li>
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+            <td>{i[2]}</td>
+          </tr>
         ))}
-      </ul>
+      </table>
       <h1>Brand Table</h1>
-      <ul>
+      <table className="walmart">
         {args.brand.map((i) => (
-          <li>{i[0]}</li>
+          <tr>
+            <td>{i[0]} </td>
+          </tr>
         ))}
-      </ul>
+      </table>
       <h1>Store Table</h1>
-      <ul>
+      <table className="walmart">
         {args.store.map((i) => (
-          <li>
-            {i[0]} | {i[1]} | {i[2]} | {i[3]}
-          </li>
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+            <td>{i[2]}</td>
+            <td>{i[3]}</td>
+          </tr>
         ))}
-      </ul>
+      </table>
     </div>
   );
 }
