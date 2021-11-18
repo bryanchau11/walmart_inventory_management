@@ -28,6 +28,7 @@ def index():
     product_list_header = list(
         zip([header[0] for header in cur.execute("select * from product").description])
     )
+
     product_list = cur.execute("select * from product").fetchall()
     product_list.insert(0, tuple(product_list_header))
     #
