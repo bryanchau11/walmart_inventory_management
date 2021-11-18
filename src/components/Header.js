@@ -25,7 +25,7 @@ function Header() {
     );
   }
   return (
-    <div>
+    <div style={{ color: 'wheat' }}>
       <h1>Type your SQL command to execute</h1>
       <Form className="d-flex" onSubmit={onButtonClick}>
         <FormControl

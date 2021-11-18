@@ -25,15 +25,15 @@ function Command() {
       });
   }, [command]);
   return (
-    <div>
+    <div style={{ color: 'wheat', fontSize: '25px' }}>
       This is your sql command: {command}
       {error}
       <br />
       <table className="walmart">
         {result.map((item) => (
-          <tr>
+          <tr style={{ color: 'wheat' }}>
             {item.map((i) => (
-              <td>{i}</td>
+              <td style={{ color: 'wheat' }}>{i}</td>
             ))}
           </tr>
         ))}

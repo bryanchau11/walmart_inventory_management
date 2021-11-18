@@ -10,7 +10,7 @@ function App() {
   const args = JSON.parse(document.getElementById('data').text);
 
   return (
-    <div>
+    <div style={{ color: 'wheat' }}>
       <h1>Product Table</h1>
       <table className="walmart">
         {args.product.map((i) => (
@@ -49,6 +49,90 @@ function App() {
             <td>{i[1]}</td>
             <td>{i[2]}</td>
             <td>{i[3]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>Vendor Table</h1>
+      <table className="walmart">
+        {args.vendor.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>Customer Table</h1>
+      <table className="walmart">
+        {args.customer.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+            <td>{i[2]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>is_visited Table</h1>
+      <table className="walmart">
+        {args.is_visited.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>is_paid Table</h1>
+      <table className="walmart">
+        {args.is_paid.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>is_sold_V_B Table</h1>
+      <table className="walmart">
+        {args.is_sold_V_B.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>has_type Table</h1>
+      <table className="walmart">
+        {args.has_type.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>is_under Table</h1>
+      <table className="walmart">
+        {args.is_under.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>is_sold_S_P Table</h1>
+      <table className="walmart">
+        {args.is_sold_S_P.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+            <td>{i[2]}</td>
+          </tr>
+        ))}
+      </table>
+      <h1>purchase Table</h1>
+      <table className="walmart">
+        {args.purchase.map((i) => (
+          <tr>
+            <td>{i[0]} </td>
+            <td>{i[1]}</td>
+            <td>{i[2]}</td>
           </tr>
         ))}
       </table>

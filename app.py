@@ -53,11 +53,89 @@ def index():
     store_list = cur.execute("select * from store").fetchall()
     store_list.insert(0, tuple(store_list_header))
 
+    #
+    vendor_list_header = list(
+        zip([header[0] for header in cur.execute("select * from vendor").description])
+    )
+    vendor_list = cur.execute("select * from vendor").fetchall()
+    vendor_list.insert(0, tuple(vendor_list_header))
+    #
+    customer_list_header = list(
+        zip([header[0] for header in cur.execute("select * from customer").description])
+    )
+    customer_list = cur.execute("select * from customer").fetchall()
+    customer_list.insert(0, tuple(customer_list_header))
+    #
+    is_visited_list_header = list(
+        zip(
+            [
+                header[0]
+                for header in cur.execute("select * from is_visited").description
+            ]
+        )
+    )
+    is_visited_list = cur.execute("select * from is_visited").fetchall()
+    is_visited_list.insert(0, tuple(is_visited_list_header))
+    #
+    is_paid_list_header = list(
+        zip([header[0] for header in cur.execute("select * from is_paid").description])
+    )
+    is_paid_list = cur.execute("select * from is_paid").fetchall()
+    is_paid_list.insert(0, tuple(is_paid_list_header))
+    #
+    is_sold_V_B_list_header = list(
+        zip(
+            [
+                header[0]
+                for header in cur.execute("select * from is_sold_V_B").description
+            ]
+        )
+    )
+    is_sold_V_B_list = cur.execute("select * from is_sold_V_B").fetchall()
+    is_sold_V_B_list.insert(0, tuple(is_sold_V_B_list_header))
+    #
+    has_type_list_header = list(
+        zip([header[0] for header in cur.execute("select * from has_type").description])
+    )
+    has_type_list = cur.execute("select * from has_type").fetchall()
+    has_type_list.insert(0, tuple(has_type_list_header))
+    #
+    is_under_list_header = list(
+        zip([header[0] for header in cur.execute("select * from is_under").description])
+    )
+    is_under_list = cur.execute("select * from is_under").fetchall()
+    is_under_list.insert(0, tuple(is_under_list_header))
+    #
+    is_sold_S_P_list_header = list(
+        zip(
+            [
+                header[0]
+                for header in cur.execute("select * from is_sold_S_P").description
+            ]
+        )
+    )
+    is_sold_S_P_list = cur.execute("select * from is_sold_S_P").fetchall()
+    is_sold_S_P_list.insert(0, tuple(is_sold_S_P_list_header))
+    #
+    purchase_list_header = list(
+        zip([header[0] for header in cur.execute("select * from purchase").description])
+    )
+    purchase_list = cur.execute("select * from purchase").fetchall()
+    purchase_list.insert(0, tuple(purchase_list_header))
     DATA = {
         "product": product_list,
         "productType": productType_list,
         "brand": brand_list,
         "store": store_list,
+        "vendor": vendor_list,
+        "customer": customer_list,
+        "is_visited": is_visited_list,
+        "is_paid": is_paid_list,
+        "is_sold_V_B": is_sold_V_B_list,
+        "has_type": has_type_list,
+        "is_under": is_under_list,
+        "is_sold_S_P": is_sold_S_P_list,
+        "purchase": purchase_list,
     }
     data = json.dumps(DATA)
     return flask.render_template(
@@ -76,13 +154,9 @@ f = open(
     "product_table.json",
 )
 data = json.load(f)
-customerID = []
-customerName = []
-paidMemberShip = []
-for i in data["customer"]:
-    customerID.append(i["customerID"])
-    customerName.append(i["customerName"])
-    paidMemberShip.append(i["paidMemberShip"])
+storeID = []
+for i in data["store"]:
+    storeID.append(i["storeID"])
 
 
 def checkDup(list):
@@ -96,7 +170,7 @@ def checkDup(list):
     print(dict)
 
 
-checkDup(customerID)
+checkDup(storeID)
 
 
 def create_table():
@@ -169,20 +243,20 @@ def create_table():
     cur.execute(
         "create table if not exists product(usItemID INT PRIMARY KEY, UPC INT, storeID INT, price INT, productName VARCHAR(500))"
     )
-    # cur.executemany("INSERT INTO product VALUES(?,?,?,?,?)", product)
+    cur.executemany("INSERT INTO product VALUES(?,?,?,?,?)", product)
 
     # Create table brand
     cur.execute("create table if not exists brand(brandName VARCHAR(300) PRIMARY KEY)")
     brand = list(zip(set(brandName)))
 
-    # cur.executemany("INSERT INTO brand VALUES(?)", brand)
+    cur.executemany("INSERT INTO brand VALUES(?)", brand)
 
     # Create table productType
     productType = list(zip(type, offerType, departmentName))
     cur.execute(
         "create table if not exists productType(type VARCHAR(50), offerType VARCHAR(50), departmentName VARCHAR(100))"
     )
-    # cur.executemany("INSERT INTO productType VALUES(?,?,?)", productType)
+    cur.executemany("INSERT INTO productType VALUES(?,?,?)", productType)
 
     # Create table store
 
@@ -190,21 +264,21 @@ def create_table():
     cur.execute(
         "create table if not exists store(storeID INT PRIMARY KEY, storeAddress VARCHAR(200), storePhone VARCHAR(20), storeHour VARCHAR(50))"
     )
-    # cur.executemany("INSERT INTO store VALUES(?,?,?,?)", store)
+    cur.executemany("INSERT INTO store VALUES(?,?,?,?)", store)
 
     # Create table vendor
     vendor = list(zip(sellerName, sellerReviewCount))
     cur.execute(
         "create table if not exists vendor(sellerName VARCHAR(100) PRIMARY KEY, sellerReviewCount INT)"
     )
-    # cur.executemany("INSERT INTO vendor VALUES(?,?)", vendor)
+    cur.executemany("INSERT INTO vendor VALUES(?,?)", vendor)
 
     # Create table customer
     customer = list(zip(customerID, customerName, paidMemberShip))
     cur.execute(
         "create table if not exists customer(customerID INT PRIMARY KEY, customerName VARCHAR(20), paidMemberShip VARCHAR(10))"
     )
-    # cur.executemany("INSERT INTO customer VALUES(?,?,?)", customer)
+    cur.executemany("INSERT INTO customer VALUES(?,?,?)", customer)
 
     # Create table purchase
     purchase = [
@@ -213,9 +287,7 @@ def create_table():
     cur.execute(
         "create table if not exists purchase(customerID INT PRIMARY KEY, usItemID INT, quantity INT, FOREIGN KEY(customerID) REFERENCES customer(customerID), FOREIGN KEY(usItemID) REFERENCES product(usItemID))"
     )
-    # cur.executemany("INSERT INTO purchase VALUES(?,?,?)", purchase)
-    con.commit()
-    con.close()
+    cur.executemany("INSERT INTO purchase VALUES(?,?,?)", purchase)
 
     # Create table has_type
     has_type = list(zip(usItemID, type))
@@ -224,12 +296,12 @@ def create_table():
     )
     cur.executemany("INSERT INTO has_type VALUES(?,?)", has_type)
 
-    # Create table is_under
-    is_under = list(zip(usItemID, brandName))
+    # Create table is_sold_S_P
+    is_sold_S_P = list(zip(usItemID, brandName))
     cur.execute(
-        "create table if not exists is_under(usItemID INT PRIMARY KEY, brandName VARCHAR(300),FOREIGN KEY(usItemID) REFERENCES product(usItemID), FOREIGN KEY(brandName) REFERENCES brand(brandName))"
+        "create table if not exists is_sold_S_P(usItemID INT PRIMARY KEY, brandName VARCHAR(300),FOREIGN KEY(usItemID) REFERENCES product(usItemID), FOREIGN KEY(brandName) REFERENCES brand(brandName))"
     )
-    cur.executemany("INSERT INTO is_under VALUES(?,?)", is_under)
+    cur.executemany("INSERT INTO is_sold_S_P VALUES(?,?)", is_sold_S_P)
 
     # Create table is_visited
     is_visited = [[i, random.choice(storeID)] for i in customerID]
@@ -239,11 +311,28 @@ def create_table():
     cur.executemany("INSERT INTO is_visited VALUES(?,?)", is_visited)
 
     # Create table is_paid
+    storeID = [2584, 3067, 3071, 1373, 2154, 3074, 3070, 1184, 3621, 2360]
     is_paid = [[i, random.choice(sellerName)] for i in storeID]
     cur.execute(
         "create table if not exists is_paid(storeID INT PRIMARY KEY, sellerName VARCHAR(100), FOREIGN KEY(sellerName) REFERENCES vendor(sellerName), FOREIGN KEY(storeID) REFERENCES store(storeID))"
     )
     cur.executemany("INSERT INTO is_paid VALUES(?,?)", is_paid)
+
+    # Create table is_sold_V_P
+    is_sold_V_B = [[i, random.choice(brandName)] for i in sellerName]
+    cur.execute(
+        "create table if not exists is_sold_V_B(sellerName VARCHAR(100) PRIMARY KEY, brandName VARCHAR(100), FOREIGN KEY(sellerName) REFERENCES vendor(sellerName), FOREIGN KEY(brandName) REFERENCES brand(brandName))"
+    )
+    cur.executemany("INSERT INTO is_sold_V_B VALUES(?,?)", is_sold_V_B)
+
+    # Create table is_sold_S_P
+    is_sold_S_P = [[i, random.choice(storeID), random.randint(5, 50)] for i in usItemID]
+    cur.execute(
+        "create table if not exists is_sold_S_P(usItemID INT PRIMARY KEY, storeID INT, availability INT,FOREIGN KEY(usItemID) REFERENCES product(usItemID), FOREIGN KEY(storeID) REFERENCES store(storeID))"
+    )
+    cur.executemany("INSERT INTO is_sold_S_P VALUES(?,?,?)", is_sold_S_P)
+    con.commit()
+    con.close()
 
 
 """
@@ -275,18 +364,24 @@ def catch_all(path):
 @app.route("/execute_command", methods=["POST"])
 def execute_command():
     command = flask.request.json.get("command")
+
     con = sqlite3.connect("walmart.db")
     cur = con.cursor()
-    result = []
-    header = list(zip([header[0] for header in cur.execute(command).description]))
-    try:
-        result = cur.execute(command).fetchall()
-        result.insert(0, tuple(header))
-        return flask.jsonify({"result": result, "error": None})
-    except:
-        e = sys.exc_info()[0]
-        result.insert(0, tuple(header))
-        return flask.jsonify({"result": result, "error": e})
+    if command[:6].lower() != "select":
+        cur.execute(command)
+        con.commit()
+        con.close()
+    else:
+        result = []
+        header = list(zip([header[0] for header in cur.execute(command).description]))
+        try:
+            result = cur.execute(command).fetchall()
+            result.insert(0, tuple(header))
+            return flask.jsonify({"result": result, "error": None})
+        except:
+            e = sys.exc_info()[0]
+            result.insert(0, tuple(header))
+            return flask.jsonify({"result": result, "error": e})
 
 
 """ 
