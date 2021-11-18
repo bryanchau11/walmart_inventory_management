@@ -17,6 +17,7 @@ app = flask.Flask(__name__, static_folder="./build/static")
 # actual files in /templates when we're looking for the index page file. This allows
 # us to load React code into a webpage. Look up create-react-app for more reading on
 # why this is necessary.
+app.secret_key = "hey"
 bp = flask.Blueprint("bp", __name__, template_folder="./build")
 
 
@@ -147,7 +148,7 @@ def index():
 app.register_blueprint(bp)
 
 ###
-
+""" 
 con = sqlite3.connect("walmart.db")
 cur = con.cursor()
 f = open(
@@ -171,6 +172,7 @@ def checkDup(list):
 
 
 checkDup(storeID)
+"""
 
 
 def create_table():
