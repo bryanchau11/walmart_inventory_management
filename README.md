@@ -37,6 +37,7 @@
 - `customerlist.csv` stores customer information.
 
 5. (20 points.) At least five interesting queries on this database / data
+
 a. `select distinct p.productName, pu.usItemID, sum(pu.quantity) from Product p, purchase pu where p.usItemID = pu.usItemID group by pu.usItemID Order by sum(pu.quantity) desc;`
 => This gives the total amount of sales for each product in the database
 
