@@ -338,18 +338,6 @@ def create_table():
     con.close()
 
 
-"""
-con = sqlite3.connect("walmart.db")
-cur = con.cursor()
-product_list_header = list(
-    [header[0] for header in cur.execute("select * from product").description]
-)
-product_list = cur.execute("select * from product").fetchall()
-product_list.insert(0, tuple(product_list_header))
-print(product_list)
-"""
-
-
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def catch_all(path):
