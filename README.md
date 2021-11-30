@@ -59,4 +59,4 @@ f. `select Customer.customerID, Customer.customerName from Customer, is_visited,
 => Get names and ids of customers who has visited stores and has bought products which are in PERSONAL CARE department.
 
 6. (20 points.) A 5-10 minute video presentation of your system, outlining the idea of the organization, the E-R diagram, the data generation, and the running of the queries given in (5.)
-- Waiting for youtube link...
+- [https://youtu.be/8lK9j8aMPZA]
