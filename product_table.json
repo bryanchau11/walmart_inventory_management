@@ -1,584 +1,490 @@
 {
-    "product": [
-        {
-            "usItemID": "407378056",
-            "upc": "092636323394",
-            "storeID": 1184,
-            "price": 47.54,
-            "productName": "Targus 13\" Magnetic Privacy Screen for Macbook Pro and MacBook Air, Black",
-            "brandName": "Targus",
-            "type": "Laptop Bags & Cases",
-            "offerType": "ONLINE_ONLY",
-            "departmentName": "CONSUMER ELECTRONICS"
-        },
-        {
-            "usItemID": "55500001",
-            "upc": "783048998651",
-            "storeID": 1184,
-            "price": 29.99,
-            "productName": "Truly Soft Everyday Sheet Set Grey Microfiber 4-Piece King Sheet Set",
-            "brandName": "Truly Soft",
-            "type": "Bed Sheets",
-            "offerType": "ONLINE_ONLY",
-            "departmentName": "BEDDING"
-        },
-        {
-            "usItemID": "596140033",
-            "upc": "766686937268",
-            "storeID": 3074,
-            "price": 10.19,
-            "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 25.4\" Length",
-            "brandName": "Mainstays",
-            "type": "Window Blinds",
-            "offerType": "ONLINE_ONLY",
-            "departmentName": "HOME DECOR"
-        },
-        {
-            "usItemID": "363845482",
-            "upc": "766686937312",
-            "storeID": 3074,
-            "price": 12.57,
-            "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 29.4\" L",
-            "brandName": "Mainstays",
-            "type": "Window Blinds",
-            "offerType": "ONLINE_ONLY",
-            "departmentName": "HOME DECOR"
-        },
-        {
-            "usItemID": "515619521",
-            "upc": null,
-            "storeID": 3621,
-            "price": 54.35,
-            "productName": "Your Zone Kids Bin Storage and Book Case, White Finish",
-            "brandName": "Your Zone",
-            "type": "Bookcases",
-            "offerType": "ONLINE_ONLY",
-            "departmentName": "FURNITURE"
-        },
-        {
-            "usItemID": "475271390",
-            "upc": "630996130186",
-            "storeID": 1184,
-            "price": 18.88,
-            "productName": "Bluey - Heeler 4WD Family Vehicle - Four 2.5-3\" Figures & 1 Car Play Vehicle",
-            "brandName": "Bluey",
-            "type": "Play Vehicles",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "TOYS"
-        },
-        {
-            "usItemID": "109930925",
-            "upc": "050743642265",
-            "storeID": 3071,
-            "price": 42.69,
-            "productName": "Little Tikes Easy Store 3-Foot Trampoline, with Hand Rail, Blue",
-            "brandName": "Little Tikes",
-            "type": "Trampolines",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "TOYS"
-        },
-        {
-            "usItemID": "675140113",
-            "upc": "194356051011",
-            "storeID": 2584,
-            "price": 12.97,
-            "productName": "Discovery Glowing Gemstone Dig, Art & Craft Kits For Boys & Girls, Kids & Teens",
-            "brandName": "Discovery",
-            "type": "Art & Craft Kits",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "ARTS CRAFTS SEWING"
-        },
-        {
-            "usItemID": "42424706",
-            "upc": "012587787502",
-            "storeID": 3070,
-            "price": 13.72,
-            "productName": "Glad ForceFlex Tall Kitchen Trash Bags, 13 Gallon, 80 Bags (Gain Original Scent, Febreze Freshness)",
-            "brandName": "Glad",
-            "type": "Garbage Bags",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "HOUSEHOLD PAPER GOODS"
-        },
-        {
-            "usItemID": "795925903",
-            "upc": "037000486657",
-            "storeID": 1373,
-            "price": 5.94,
-            "productName": "Microban 24 Hour Disinfectant Sanitizing Spray, Fresh Scent, 15 Fl Oz",
-            "brandName": "Microban",
-            "type": "Disinfectant Sprays",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "HOUSEHOLD CHEMICALS/SUPP"
-        },
-        {
-            "usItemID": "14898365",
-            "upc": "044600302089",
-            "storeID": 3067,
-            "price": 9.98,
-            "productName": "Clorox Disinfecting Wipes, (225 Count Value Pack), Crisp Lemon and Fresh Scent - 3 Pack - 75 Count Each",
-            "brandName": "Clorox",
-            "type": "Cleaning Cloths & Wipes",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "HOUSEHOLD CHEMICALS/SUPP"
-        },
-        {
-            "usItemID": "34720573",
-            "upc": "035000269188",
-            "storeID": 1184,
-            "price": 3.97,
-            "productName": "Colgate Irish Spring Body Wash for Men, Original, 18 fl. Oz.",
-            "brandName": "Irish Spring",
-            "type": "Body Washes & Shower Gels",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "PERSONAL CARE"
-        },
-        {
-            "usItemID": "2304198",
-            "upc": "037000324942",
-            "storeID": 3070,
-            "price": 5.77,
-            "productName": "Always Ultra Thin Pads without Wings, Unscented, Long, Size 2, 40 Ct",
-            "brandName": "Always",
-            "type": "Sanitary Napkins",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "PERSONAL CARE"
-        },
-        {
-            "usItemID": "908197301",
-            "upc": "037000787945",
-            "storeID": 3067,
-            "price": 6.97,
-            "productName": "Crest Pro Health Smooth Formula Toothpaste, Clean Mint, 4.6 Oz, 3 pk",
-            "brandName": "Crest",
-            "type": "Toothpastes",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "PERSONAL CARE"
-        },
-        {
-            "usItemID": "16940601",
-            "upc": "310158084143",
-            "storeID": 2360,
-            "price": 10.68,
-            "productName": "Sensodyne Extra Whitening Sensitive Teeth Whitening Toothpaste, 4 Oz, 2 Pack",
-            "brandName": "Sensodyne",
-            "type": "Toothpastes",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "PERSONAL CARE"
-        },
-        {
-            "usItemID": "38773089",
-            "upc": "310158830863",
-            "storeID": 3621,
-            "price": 10.68,
-            "productName": "Sensodyne Pronamel Fresh Breath Enamel Sensitive Toothpaste, Fresh Wave, 4 Oz, 2 Pack",
-            "brandName": "Sensodyne",
-            "type": "Toothpastes",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "PERSONAL CARE"
-        },
-        {
-            "usItemID": "35520771",
-            "upc": "034223421847",
-            "storeID": 3067,
-            "price": 22.97,
-            "productName": "Igloo 5-Gallon Heavy-Duty Beverage Cooler - Orange",
-            "brandName": "Igloo",
-            "type": "Beverage Coolers",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "SPORTING GOODS"
-        },
-        {
-            "usItemID": "650545386",
-            "upc": "793676097107",
-            "storeID": 3071,
-            "price": 68,
-            "productName": "SplatRBall Full and Semi Auto Electric Rechargeable Soft Water Bead Blaster Kit",
-            "brandName": "SPLATRBALL",
-            "type": "Air Guns",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "SPORTING GOODS"
-        },
-        {
-            "usItemID": "17808715",
-            "upc": "094733070102",
-            "storeID": 3070,
-            "price": 5.72,
-            "productName": "HotHands 10 Hour Hand Warmer | 10 Pair Pack",
-            "brandName": "HotHands",
-            "type": "Chemical Hand & Foot Warmers",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "SPORTING GOODS"
-        },
-        {
-            "usItemID": "306203294",
-            "upc": "041137027416",
-            "storeID": 2360,
-            "price": 9.48,
-            "productName": "Duraflame Firestart Gold Ultra Premium 4.5oz Fire Starters 24-Pk",
-            "brandName": "Duraflame",
-            "type": "Fire Starters",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "HARDWARE"
-        },
-        {
-            "usItemID": "706203065",
-            "upc": "190198806116",
-            "storeID": 2584,
-            "price": 169,
-            "productName": "Apple Watch Series 3 GPS - 38mm - Sport Band - Aluminum Case",
-            "brandName": "Apple",
-            "type": "Smart Watches",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "WIRELESS"
-        },
-        {
-            "usItemID": "834343104",
-            "upc": "689344403854",
-            "storeID": 1373,
-            "price": 220,
-            "productName": "Spalding 54\" Shatter-proof Polycarbonate Exactaheight\u00ae Portable Basketball Hoop",
-            "brandName": "Spalding",
-            "type": "Portable Basketball Systems",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "SPORTING GOODS"
-        },
-        {
-            "usItemID": "383634749",
-            "upc": "841015160415",
-            "storeID": 3070,
-            "price": 24.97,
-            "productName": "Ozark Trail Oversized Mesh Chair with Cooler, Black, Adult",
-            "brandName": "Ozark Trail",
-            "type": "Camping Chairs",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "SPORTING GOODS"
-        },
-        {
-            "usItemID": "45825256",
-            "upc": "071662068745",
-            "storeID": 3621,
-            "price": 14.97,
-            "productName": "Crayola Colossal Creativity Tub, Art and Craft Supplies, Art Set Gift, 90 Pieces",
-            "brandName": "Crayola",
-            "type": "Art Sets",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "STATIONERY"
-        },
-        {
-            "usItemID": "698410145",
-            "upc": "071662134556",
-            "storeID": 3621,
-            "price": 14.98,
-            "productName": "Crayola Crayon and Storage Tub, 168 Crayons, Featuring Colors of the World Crayon Colors",
-            "brandName": "Crayola",
-            "type": "Crayons",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "STATIONERY"
-        },
-        {
-            "usItemID": "489882644",
-            "upc": null,
-            "storeID": 3074,
-            "price": 1.88,
-            "productName": "Pen + Gear No. 2 Wood Pencils, Sharpened, 48 Count",
-            "brandName": "Pen+Gear",
-            "type": "Pencils",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "STATIONERY"
-        },
-        {
-            "usItemID": "14940220",
-            "upc": "071662040123",
-            "storeID": 2360,
-            "price": 1.84,
-            "productName": "Crayola Colored Pencil Set, Assorted Colors, 12 Count, School Supplies, Beginner Child",
-            "brandName": "Crayola",
-            "type": "Art Pencils",
-            "offerType": "ONLINE_AND_STORE",
-            "departmentName": "STATIONERY"
-        }
-    ],
-    "store": [
-        {
-            "storeID": 2584,
-            "storeAddress": "4375 Lawrenceville Hwy, Tucker, GA, 30084",
-            "storePhone": "770-939-2671",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 3067,
-            "storeAddress": "4975 Jimmy Carter Blvd, Norcross, GA, 30093",
-            "storePhone": "770-225-9882",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 3071,
-            "storeAddress": "3201 Tucker Norcross Rd, Tucker, GA, 30084",
-            "storePhone": "770-225-6010",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 1373,
-            "storeAddress": "4004 Lawrenceville Hwy Nw, Lilburn, GA, 30047",
-            "storePhone": "770-921-9224",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 2154,
-            "storeAddress": "2635 Pleasant Hill Rd, Duluth, GA, 30096",
-            "storePhone": "770-418-0162",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 3074,
-            "storeAddress": "3059 Lawrenceville Hwy, Lawrenceville, GA, 30044",
-            "storePhone": "678-259-0050",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 3070,
-            "storeAddress": "5025 Winters Chapel Rd, Dunwoody, GA, 30360",
-            "storePhone": "770-280-0193",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 1184,
-            "storeAddress": "1825 Rockbridge Rd, Stone Mountain, GA, 30087",
-            "storePhone": "770-469-8660",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 3621,
-            "storeAddress": "1871 Chamblee Tucker Rd, Chamblee, GA, 30341",
-            "storePhone": "770-455-0422",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        },
-        {
-            "storeID": 2360,
-            "storeAddress": "4725 Ashford Dunwoody Rd, Dunwoody, GA, 30338",
-            "storePhone": "770-395-0199",
-            "storeHour": "Mon-Sun: 6 am to 11 pm"
-        }
-    ],
-    "vendor": [
-        {
-            "sellerName": "Targus",
-            "sellerReviewCount": 20
-        },
-        {
-            "sellerName": "Toms Bed and Furniture",
-            "sellerReviewCount": 18
-        },
-        {
-            "sellerName": "Mainstays",
-            "sellerReviewCount": 38
-        },
-        {
-            "sellerName": "Decor for Kids",
-            "sellerReviewCount": 35
-        },
-        {
-            "sellerName": "Bluey Toys",
-            "sellerReviewCount": 6
-        },
-        {
-            "sellerName": "Little Tikes",
-            "sellerReviewCount": 5
-        },
-        {
-            "sellerName": "Discovery Ganes",
-            "sellerReviewCount": 31
-        },
-        {
-            "sellerName": "Glad Products",
-            "sellerReviewCount": 98
-        },
-        {
-            "sellerName": "Microban Cleaning",
-            "sellerReviewCount": 54
-        },
-        {
-            "sellerName": "Clorox Supplies",
-            "sellerReviewCount": 23
-        },
-        {
-            "sellerName": "IrishSpring Products",
-            "sellerReviewCount": 6
-        },
-        {
-            "sellerName": "Always Sanitation",
-            "sellerReviewCount": 8
-        },
-        {
-            "sellerName": "Crest Dental Products",
-            "sellerReviewCount": 67
-        },
-        {
-            "sellerName": "Sensodyne Dental Care",
-            "sellerReviewCount": 53
-        },
-        {
-            "sellerName": "Outdoor Coolers",
-            "sellerReviewCount": 78
-        },
-        {
-            "sellerName": "SplatRBall Guns",
-            "sellerReviewCount": 15
-        },
-        {
-            "sellerName": "Electronic Warmers",
-            "sellerReviewCount": 43
-        },
-        {
-            "sellerName": "DuraFlame ",
-            "sellerReviewCount": 21
-        },
-        {
-            "sellerName": "Apple",
-            "sellerReviewCount": 455
-        },
-        {
-            "sellerName": "Spalding Sports Goods",
-            "sellerReviewCount": 3
-        },
-        {
-            "sellerName": "Ozark Campe Goods",
-            "sellerReviewCount": 5
-        },
-        {
-            "sellerName": "Crayola",
-            "sellerReviewCount": 60
-        },
-        {
-            "sellerName": "Pen+Gear Utensils",
-            "sellerReviewCount": 32
-        }
-    ],
-    "customer": [
-        {
-            "customerID": 45634,
-            "customerName": "Steve",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 34524,
-            "customerName": "Greg",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 45375,
-            "customerName": "Time",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 65325,
-            "customerName": "Mark",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 65543,
-            "customerName": "Billy",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 76424,
-            "customerName": "Francis",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 55434,
-            "customerName": "Roger",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 56345,
-            "customerName": "Claus",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 76454,
-            "customerName": "Timothy",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 23456,
-            "customerName": "Helen",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 12464,
-            "customerName": "Hailey",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 43435,
-            "customerName": "David",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 12375,
-            "customerName": "Aaron",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 87546,
-            "customerName": "Randy",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 23894,
-            "customerName": "Eric",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 54386,
-            "customerName": "Kyle",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 34754,
-            "customerName": "Kenneth",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 31385,
-            "customerName": "Shelly",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 42854,
-            "customerName": "Jake",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 94360,
-            "customerName": "Paul",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 13845,
-            "customerName": "Logan",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 43472,
-            "customerName": "Derrick",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 63734,
-            "customerName": "Lenda",
-            "paidMemberShip": "True"
-        },
-        {
-            "customerID": 12365,
-            "customerName": "Louis",
-            "paidMemberShip": "False"
-        },
-        {
-            "customerID": 53824,
-            "customerName": "Peter",
-            "paidMemberShip": "True"
-        }
-    ]
+  "product": [
+    {
+      "usItemID": "407378056",
+      "upc": "092636323394",
+      "storeID": 1184,
+      "price": 47.54,
+      "productName": "Targus 13\" Magnetic Privacy Screen for Macbook Pro and MacBook Air, Black",
+      "brandName": "Targus",
+      "type": "Laptop Bags & Cases",
+      "offerType": "ONLINE_ONLY",
+      "departmentName": "CONSUMER ELECTRONICS"
+    },
+    {
+      "usItemID": "55500001",
+      "upc": "783048998651",
+      "storeID": 1184,
+      "price": 29.99,
+      "productName": "Truly Soft Everyday Sheet Set Grey Microfiber 4-Piece King Sheet Set",
+      "brandName": "Truly Soft",
+      "type": "Bed Sheets",
+      "offerType": "ONLINE_ONLY",
+      "departmentName": "BEDDING"
+    },
+    {
+      "usItemID": "596140033",
+      "upc": "766686937268",
+      "storeID": 3074,
+      "price": 10.19,
+      "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 25.4\" Length",
+      "brandName": "Mainstays",
+      "type": "Window Blinds",
+      "offerType": "ONLINE_ONLY",
+      "departmentName": "HOME DECOR"
+    },
+    {
+      "usItemID": "363845482",
+      "upc": "766686937312",
+      "storeID": 3074,
+      "price": 12.57,
+      "productName": "Mainstays Cordless 1\" Vinyl Light Filtering Blinds, Gray, 29.4\" L",
+      "brandName": "Mainstays",
+      "type": "Window Blinds",
+      "offerType": "ONLINE_ONLY",
+      "departmentName": "HOME DECOR"
+    },
+    {
+      "usItemID": "515619521",
+      "upc": null,
+      "storeID": 3621,
+      "price": 54.35,
+      "productName": "Your Zone Kids Bin Storage and Book Case, White Finish",
+      "brandName": "Your Zone",
+      "type": "Bookcases",
+      "offerType": "ONLINE_ONLY",
+      "departmentName": "FURNITURE"
+    },
+    {
+      "usItemID": "475271390",
+      "upc": "630996130186",
+      "storeID": 1184,
+      "price": 18.88,
+      "productName": "Bluey - Heeler 4WD Family Vehicle - Four 2.5-3\" Figures & 1 Car Play Vehicle",
+      "brandName": "Bluey",
+      "type": "Play Vehicles",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "TOYS"
+    },
+    {
+      "usItemID": "109930925",
+      "upc": "050743642265",
+      "storeID": 3071,
+      "price": 42.69,
+      "productName": "Little Tikes Easy Store 3-Foot Trampoline, with Hand Rail, Blue",
+      "brandName": "Little Tikes",
+      "type": "Trampolines",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "TOYS"
+    },
+    {
+      "usItemID": "675140113",
+      "upc": "194356051011",
+      "storeID": 2584,
+      "price": 12.97,
+      "productName": "Discovery Glowing Gemstone Dig, Art & Craft Kits For Boys & Girls, Kids & Teens",
+      "brandName": "Discovery",
+      "type": "Art & Craft Kits",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "ARTS CRAFTS SEWING"
+    },
+    {
+      "usItemID": "42424706",
+      "upc": "012587787502",
+      "storeID": 3070,
+      "price": 13.72,
+      "productName": "Glad ForceFlex Tall Kitchen Trash Bags, 13 Gallon, 80 Bags (Gain Original Scent, Febreze Freshness)",
+      "brandName": "Glad",
+      "type": "Garbage Bags",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "HOUSEHOLD PAPER GOODS"
+    },
+    {
+      "usItemID": "795925903",
+      "upc": "037000486657",
+      "storeID": 1373,
+      "price": 5.94,
+      "productName": "Microban 24 Hour Disinfectant Sanitizing Spray, Fresh Scent, 15 Fl Oz",
+      "brandName": "Microban",
+      "type": "Disinfectant Sprays",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "HOUSEHOLD CHEMICALS/SUPP"
+    },
+    {
+      "usItemID": "14898365",
+      "upc": "044600302089",
+      "storeID": 3067,
+      "price": 9.98,
+      "productName": "Clorox Disinfecting Wipes, (225 Count Value Pack), Crisp Lemon and Fresh Scent - 3 Pack - 75 Count Each",
+      "brandName": "Clorox",
+      "type": "Cleaning Cloths & Wipes",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "HOUSEHOLD CHEMICALS/SUPP"
+    },
+    {
+      "usItemID": "34720573",
+      "upc": "035000269188",
+      "storeID": 1184,
+      "price": 3.97,
+      "productName": "Colgate Irish Spring Body Wash for Men, Original, 18 fl. Oz.",
+      "brandName": "Irish Spring",
+      "type": "Body Washes & Shower Gels",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "PERSONAL CARE"
+    },
+    {
+      "usItemID": "2304198",
+      "upc": "037000324942",
+      "storeID": 3070,
+      "price": 5.77,
+      "productName": "Always Ultra Thin Pads without Wings, Unscented, Long, Size 2, 40 Ct",
+      "brandName": "Always",
+      "type": "Sanitary Napkins",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "PERSONAL CARE"
+    },
+    {
+      "usItemID": "908197301",
+      "upc": "037000787945",
+      "storeID": 3067,
+      "price": 6.97,
+      "productName": "Crest Pro Health Smooth Formula Toothpaste, Clean Mint, 4.6 Oz, 3 pk",
+      "brandName": "Crest",
+      "type": "Toothpastes",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "PERSONAL CARE"
+    },
+    {
+      "usItemID": "16940601",
+      "upc": "310158084143",
+      "storeID": 2360,
+      "price": 10.68,
+      "productName": "Sensodyne Extra Whitening Sensitive Teeth Whitening Toothpaste, 4 Oz, 2 Pack",
+      "brandName": "Sensodyne",
+      "type": "Toothpastes",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "PERSONAL CARE"
+    },
+    {
+      "usItemID": "38773089",
+      "upc": "310158830863",
+      "storeID": 3621,
+      "price": 10.68,
+      "productName": "Sensodyne Pronamel Fresh Breath Enamel Sensitive Toothpaste, Fresh Wave, 4 Oz, 2 Pack",
+      "brandName": "Sensodyne",
+      "type": "Toothpastes",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "PERSONAL CARE"
+    },
+    {
+      "usItemID": "35520771",
+      "upc": "034223421847",
+      "storeID": 3067,
+      "price": 22.97,
+      "productName": "Igloo 5-Gallon Heavy-Duty Beverage Cooler - Orange",
+      "brandName": "Igloo",
+      "type": "Beverage Coolers",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "SPORTING GOODS"
+    },
+    {
+      "usItemID": "650545386",
+      "upc": "793676097107",
+      "storeID": 3071,
+      "price": 68,
+      "productName": "SplatRBall Full and Semi Auto Electric Rechargeable Soft Water Bead Blaster Kit",
+      "brandName": "SPLATRBALL",
+      "type": "Air Guns",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "SPORTING GOODS"
+    },
+    {
+      "usItemID": "17808715",
+      "upc": "094733070102",
+      "storeID": 3070,
+      "price": 5.72,
+      "productName": "HotHands 10 Hour Hand Warmer | 10 Pair Pack",
+      "brandName": "HotHands",
+      "type": "Chemical Hand & Foot Warmers",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "SPORTING GOODS"
+    },
+    {
+      "usItemID": "306203294",
+      "upc": "041137027416",
+      "storeID": 2360,
+      "price": 9.48,
+      "productName": "Duraflame Firestart Gold Ultra Premium 4.5oz Fire Starters 24-Pk",
+      "brandName": "Duraflame",
+      "type": "Fire Starters",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "HARDWARE"
+    },
+    {
+      "usItemID": "706203065",
+      "upc": "190198806116",
+      "storeID": 2584,
+      "price": 169,
+      "productName": "Apple Watch Series 3 GPS - 38mm - Sport Band - Aluminum Case",
+      "brandName": "Apple",
+      "type": "Smart Watches",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "WIRELESS"
+    },
+    {
+      "usItemID": "834343104",
+      "upc": "689344403854",
+      "storeID": 1373,
+      "price": 220,
+      "productName": "Spalding 54\" Shatter-proof Polycarbonate Exactaheight\u00ae Portable Basketball Hoop",
+      "brandName": "Spalding",
+      "type": "Portable Basketball Systems",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "SPORTING GOODS"
+    },
+    {
+      "usItemID": "383634749",
+      "upc": "841015160415",
+      "storeID": 3070,
+      "price": 24.97,
+      "productName": "Ozark Trail Oversized Mesh Chair with Cooler, Black, Adult",
+      "brandName": "Ozark Trail",
+      "type": "Camping Chairs",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "SPORTING GOODS"
+    },
+    {
+      "usItemID": "45825256",
+      "upc": "071662068745",
+      "storeID": 3621,
+      "price": 14.97,
+      "productName": "Crayola Colossal Creativity Tub, Art and Craft Supplies, Art Set Gift, 90 Pieces",
+      "brandName": "Crayola",
+      "type": "Art Sets",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "STATIONERY"
+    },
+    {
+      "usItemID": "698410145",
+      "upc": "071662134556",
+      "storeID": 3621,
+      "price": 14.98,
+      "productName": "Crayola Crayon and Storage Tub, 168 Crayons, Featuring Colors of the World Crayon Colors",
+      "brandName": "Crayola",
+      "type": "Crayons",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "STATIONERY"
+    },
+    {
+      "usItemID": "489882644",
+      "upc": null,
+      "storeID": 3074,
+      "price": 1.88,
+      "productName": "Pen + Gear No. 2 Wood Pencils, Sharpened, 48 Count",
+      "brandName": "Pen+Gear",
+      "type": "Pencils",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "STATIONERY"
+    },
+    {
+      "usItemID": "14940220",
+      "upc": "071662040123",
+      "storeID": 2360,
+      "price": 1.84,
+      "productName": "Crayola Colored Pencil Set, Assorted Colors, 12 Count, School Supplies, Beginner Child",
+      "brandName": "Crayola",
+      "type": "Art Pencils",
+      "offerType": "ONLINE_AND_STORE",
+      "departmentName": "STATIONERY"
+    }
+  ],
+  "store": [
+    {
+      "storeID": 2584,
+      "storeAddress": "4375 Lawrenceville Hwy, Tucker, GA, 30084",
+      "storePhone": "770-939-2671",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 3067,
+      "storeAddress": "4975 Jimmy Carter Blvd, Norcross, GA, 30093",
+      "storePhone": "770-225-9882",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 3071,
+      "storeAddress": "3201 Tucker Norcross Rd, Tucker, GA, 30084",
+      "storePhone": "770-225-6010",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 1373,
+      "storeAddress": "4004 Lawrenceville Hwy Nw, Lilburn, GA, 30047",
+      "storePhone": "770-921-9224",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 2154,
+      "storeAddress": "2635 Pleasant Hill Rd, Duluth, GA, 30096",
+      "storePhone": "770-418-0162",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 3074,
+      "storeAddress": "3059 Lawrenceville Hwy, Lawrenceville, GA, 30044",
+      "storePhone": "678-259-0050",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 3070,
+      "storeAddress": "5025 Winters Chapel Rd, Dunwoody, GA, 30360",
+      "storePhone": "770-280-0193",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 1184,
+      "storeAddress": "1825 Rockbridge Rd, Stone Mountain, GA, 30087",
+      "storePhone": "770-469-8660",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 3621,
+      "storeAddress": "1871 Chamblee Tucker Rd, Chamblee, GA, 30341",
+      "storePhone": "770-455-0422",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    },
+    {
+      "storeID": 2360,
+      "storeAddress": "4725 Ashford Dunwoody Rd, Dunwoody, GA, 30338",
+      "storePhone": "770-395-0199",
+      "storeHour": "Mon-Sun: 6 am to 11 pm"
+    }
+  ],
+  "vendor": [
+    { "sellerName": "Targus", "sellerReviewCount": 20 },
+    { "sellerName": "Toms Bed and Furniture", "sellerReviewCount": 18 },
+    { "sellerName": "Mainstays", "sellerReviewCount": 38 },
+    { "sellerName": "Decor for Kids", "sellerReviewCount": 35 },
+    { "sellerName": "Bluey Toys", "sellerReviewCount": 6 },
+    { "sellerName": "Little Tikes", "sellerReviewCount": 5 },
+    { "sellerName": "Discovery Ganes", "sellerReviewCount": 31 },
+    { "sellerName": "Glad Products", "sellerReviewCount": 98 },
+    { "sellerName": "Microban Cleaning", "sellerReviewCount": 54 },
+    { "sellerName": "Clorox Supplies", "sellerReviewCount": 23 },
+    { "sellerName": "IrishSpring Products", "sellerReviewCount": 6 },
+    { "sellerName": "Always Sanitation", "sellerReviewCount": 8 },
+    { "sellerName": "Crest Dental Products", "sellerReviewCount": 67 },
+    { "sellerName": "Sensodyne Dental Care", "sellerReviewCount": 53 },
+    { "sellerName": "Outdoor Coolers", "sellerReviewCount": 78 },
+    { "sellerName": "SplatRBall Guns", "sellerReviewCount": 15 },
+    { "sellerName": "Electronic Warmers", "sellerReviewCount": 43 },
+    { "sellerName": "DuraFlame ", "sellerReviewCount": 21 },
+    { "sellerName": "Apple", "sellerReviewCount": 455 },
+    { "sellerName": "Spalding Sports Goods", "sellerReviewCount": 3 },
+    { "sellerName": "Ozark Campe Goods", "sellerReviewCount": 5 },
+    { "sellerName": "Crayola", "sellerReviewCount": 60 },
+    { "sellerName": "Pen+Gear Utensils", "sellerReviewCount": 32 }
+  ],
+  "customer": [
+    { "customerID": "45634", "customerName": "Steve", "paidMemberShip": "TRUE" },
+    { "customerID": "34524", "customerName": "Greg", "paidMemberShip": "FALSE" },
+    { "customerID": "45375", "customerName": "Time", "paidMemberShip": "TRUE" },
+    { "customerID": "65325", "customerName": "Mark", "paidMemberShip": "FALSE" },
+    { "customerID": "65543", "customerName": "Billy", "paidMemberShip": "TRUE" },
+    { "customerID": "23456", "customerName": "Stan", "paidMemberShip": "TRUE" },
+    { "customerID": "76424", "customerName": "Francis", "paidMemberShip": "FALSE" },
+    { "customerID": "55434", "customerName": "Roger", "paidMemberShip": "FALSE" },
+    { "customerID": "56345", "customerName": "Claus", "paidMemberShip": "FALSE" },
+    { "customerID": "76454", "customerName": "Timothy", "paidMemberShip": "TRUE" },
+    { "customerID": "23406", "customerName": "Helen", "paidMemberShip": "TRUE" },
+    { "customerID": "12464", "customerName": "Hailey", "paidMemberShip": "FALSE" },
+    { "customerID": "43435", "customerName": "David", "paidMemberShip": "TRUE" },
+    { "customerID": "12375", "customerName": "Aaron", "paidMemberShip": "FALSE" },
+    { "customerID": "87546", "customerName": "Randy", "paidMemberShip": "FALSE" },
+    { "customerID": "23894", "customerName": "Eric", "paidMemberShip": "TRUE" },
+    { "customerID": "54386", "customerName": "Kyle", "paidMemberShip": "FALSE" },
+    { "customerID": "34754", "customerName": "Kenneth", "paidMemberShip": "FALSE" },
+    { "customerID": "31385", "customerName": "Shelly", "paidMemberShip": "TRUE" },
+    { "customerID": "43172", "customerName": "Allen", "paidMemberShip": "TRUE" },
+    { "customerID": "42854", "customerName": "Jake", "paidMemberShip": "FALSE" },
+    { "customerID": "9436", "customerName": "Paul", "paidMemberShip": "TRUE" },
+    { "customerID": "13845", "customerName": "Logan", "paidMemberShip": "TRUE" },
+    { "customerID": "43472", "customerName": "Derrick", "paidMemberShip": "FALSE" },
+    { "customerID": "63734", "customerName": "Lenda", "paidMemberShip": "TRUE" },
+    { "customerID": "12365", "customerName": "Louis", "paidMemberShip": "FALSE" },
+    { "customerID": "53824", "customerName": "Peter", "paidMemberShip": "TRUE" },
+    { "customerID": "65535", "customerName": "Jill", "paidMemberShip": "TRUE" },
+    { "customerID": "54245", "customerName": "Rill", "paidMemberShip": "TRUE" },
+    { "customerID": "45534", "customerName": "Franky", "paidMemberShip": "FALSE" },
+    { "customerID": "23214", "customerName": "Rendel", "paidMemberShip": "FALSE" },
+    { "customerID": "56776", "customerName": "Guts", "paidMemberShip": "FALSE" },
+    { "customerID": "54744", "customerName": "Casca", "paidMemberShip": "TRUE" },
+    { "customerID": "95432", "customerName": "Griffith", "paidMemberShip": "TRUE" },
+    { "customerID": "34343", "customerName": "Saitama", "paidMemberShip": "FALSE" },
+    { "customerID": "45454", "customerName": "Genos", "paidMemberShip": "TRUE" },
+    { "customerID": "78787", "customerName": "Garou", "paidMemberShip": "FALSE" },
+    { "customerID": "89898", "customerName": "Bang", "paidMemberShip": "FALSE" },
+    { "customerID": "12121", "customerName": "Tatsumaki", "paidMemberShip": "TRUE" },
+    { "customerID": "46423", "customerName": "Goku", "paidMemberShip": "FALSE" },
+    { "customerID": "43434", "customerName": "Vegeta", "paidMemberShip": "FALSE" },
+    { "customerID": "89298", "customerName": "Trunks", "paidMemberShip": "TRUE" },
+    { "customerID": "12125", "customerName": "Gohan", "paidMemberShip": "TRUE" },
+    { "customerID": "78778", "customerName": "Piccolo", "paidMemberShip": "FALSE" },
+    { "customerID": "76768", "customerName": "Gon", "paidMemberShip": "TRUE" },
+    { "customerID": "34678", "customerName": "Killua", "paidMemberShip": "TRUE" },
+    { "customerID": "65683", "customerName": "Kurapika", "paidMemberShip": "FALSE" },
+    { "customerID": "57009", "customerName": "Leorio", "paidMemberShip": "TRUE" },
+    { "customerID": "48535", "customerName": "Hisoka", "paidMemberShip": "FALSE" },
+    { "customerID": "54634", "customerName": "Chrollo", "paidMemberShip": "TRUE" },
+    { "customerID": "45877", "customerName": "Yusuke", "paidMemberShip": "TRUE" },
+    { "customerID": "89544", "customerName": "Hiei", "paidMemberShip": "TRUE" },
+    { "customerID": "86643", "customerName": "Kurama", "paidMemberShip": "FALSE" },
+    { "customerID": "65634", "customerName": "Kuwabara", "paidMemberShip": "FALSE" },
+    { "customerID": "54735", "customerName": "Genkai", "paidMemberShip": "FALSE" },
+    { "customerID": "75375", "customerName": "Yoguro", "paidMemberShip": "TRUE" },
+    { "customerID": "45843", "customerName": "Sensui", "paidMemberShip": "TRUE" },
+    { "customerID": "76453", "customerName": "Naruto", "paidMemberShip": "FALSE" },
+    { "customerID": "64286", "customerName": "Sasuke", "paidMemberShip": "TRUE" },
+    { "customerID": "65386", "customerName": "Kakashi", "paidMemberShip": "FALSE" },
+    { "customerID": "45478", "customerName": "Madara", "paidMemberShip": "FALSE" },
+    { "customerID": "45735", "customerName": "Itachi", "paidMemberShip": "TRUE" },
+    { "customerID": "56748", "customerName": "Ichigo", "paidMemberShip": "FALSE" },
+    { "customerID": "56457", "customerName": "Aizen", "paidMemberShip": "FALSE" },
+    { "customerID": "45644", "customerName": "Rukia", "paidMemberShip": "TRUE" },
+    { "customerID": "89765", "customerName": "Grimmjow", "paidMemberShip": "TRUE" },
+    { "customerID": "68945", "customerName": "Ulqiorra", "paidMemberShip": "FALSE" },
+    { "customerID": "34564", "customerName": "Cloud", "paidMemberShip": "TRUE" },
+    { "customerID": "23255", "customerName": "Sephiroth", "paidMemberShip": "TRUE" },
+    { "customerID": "66654", "customerName": "Tifa", "paidMemberShip": "FALSE" },
+    { "customerID": "57556", "customerName": "Barret", "paidMemberShip": "TRUE" },
+    { "customerID": "54776", "customerName": "Yuffie", "paidMemberShip": "FALSE" },
+    { "customerID": "56665", "customerName": "Cid", "paidMemberShip": "TRUE" },
+    { "customerID": "67453", "customerName": "Areith", "paidMemberShip": "TRUE" },
+    { "customerID": "43464", "customerName": "Tidus", "paidMemberShip": "TRUE" },
+    { "customerID": "45463", "customerName": "Jin", "paidMemberShip": "FALSE" },
+    { "customerID": "76785", "customerName": "Kazuya", "paidMemberShip": "FALSE" },
+    { "customerID": "99865", "customerName": "Heihachi", "paidMemberShip": "FALSE" },
+    { "customerID": "65654", "customerName": "Omiman", "paidMemberShip": "TRUE" },
+    { "customerID": "78888", "customerName": "Invincible", "paidMemberShip": "TRUE" },
+    { "customerID": "45432", "customerName": "Battle-Beast", "paidMemberShip": "FALSE" },
+    { "customerID": "34454", "customerName": "Thragg", "paidMemberShip": "TRUE" },
+    { "customerID": "68564", "customerName": "Spawn", "paidMemberShip": "FALSE" },
+    { "customerID": "66743", "customerName": "Link", "paidMemberShip": "FALSE" },
+    { "customerID": "75577", "customerName": "Zelda", "paidMemberShip": "TRUE" },
+    { "customerID": "34362", "customerName": "Ganon", "paidMemberShip": "FALSE" },
+    { "customerID": "88553", "customerName": "Doom Guy", "paidMemberShip": "FALSE" },
+    { "customerID": "11223", "customerName": "Master Chief", "paidMemberShip": "TRUE" },
+    { "customerID": "57432", "customerName": "Gordon", "paidMemberShip": "TRUE" },
+    { "customerID": "78453", "customerName": "Samus", "paidMemberShip": "FALSE" },
+    { "customerID": "56333", "customerName": "Ridely", "paidMemberShip": "TRUE" },
+    { "customerID": "45376", "customerName": "Kratos", "paidMemberShip": "TRUE" },
+    { "customerID": "65645", "customerName": "Hank", "paidMemberShip": "FALSE" },
+    { "customerID": "87642", "customerName": "Bobby", "paidMemberShip": "TRUE" },
+    { "customerID": "73254", "customerName": "Peggy", "paidMemberShip": "FALSE" },
+    { "customerID": "56223", "customerName": "Quagmire", "paidMemberShip": "TRUE" },
+    { "customerID": "57453", "customerName": "Cleveland", "paidMemberShip": "TRUE" },
+    { "customerID": "75348", "customerName": "Joe", "paidMemberShip": "TRUE" },
+    { "customerID": "57375", "customerName": "Chris", "paidMemberShip": "FALSE" },
+    { "customerID": "90534", "customerName": "Meg", "paidMemberShip": "FALSE" }
+  ]
 }

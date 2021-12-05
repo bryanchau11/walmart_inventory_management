@@ -10,6 +10,7 @@ import random
 import sys
 import csv
 from csv import reader
+from collections import Counter
 
 load_dotenv(find_dotenv())
 app = flask.Flask(__name__, static_folder="./build/static")
@@ -148,31 +149,29 @@ def index():
 
 app.register_blueprint(bp)
 
-###
-""" 
+"""
 con = sqlite3.connect("walmart.db")
 cur = con.cursor()
 f = open(
     "product_table.json",
 )
 data = json.load(f)
-storeID = []
-for i in data["store"]:
-    storeID.append(i["storeID"])
-
-
-def checkDup(list):
-
-    dict = {}
-    for i in list:
-        if i in dict:
-            dict[i] += 1
-        else:
-            dict[i] = 1
-    print(dict)
-
-
-checkDup(storeID)
+customerID = []
+customerName = []
+paidMemberShip = []
+for i in data["customer"]:
+    customerID.append(i["customerID"])
+    customerName.append(i["customerName"])
+    paidMemberShip.append(i["paidMemberShip"])
+print(Counter(customerID))
+customer = list(zip(customerID, customerName, paidMemberShip))
+print(customer)
+cur.execute(
+    "create table if not exists customer(customerID INT PRIMARY KEY, customerName VARCHAR(20), paidMemberShip VARCHAR(10))"
+)
+cur.executemany("INSERT INTO customer VALUES(?,?,?)", customer)
+con.commit()
+con.close()
 """
 
 
@@ -534,8 +533,8 @@ with open("vendorlist.csv", "r") as read_obj:
             vendor.append({"sellerName": row[0], "sellerReviewCount": row[1]})
 print(vendor)
 """
-
-"""customer 
+"""
+# customer
 customer = []
 with open("customerlist.csv", "r") as read_obj:
     csv_reader = reader(read_obj)
@@ -548,8 +547,12 @@ with open("customerlist.csv", "r") as read_obj:
             customer.append(
                 {"customerID": row[0], "customerName": row[1], "paidMemberShip": row[2]}
             )
-print(customer)
-
+a_file = open("product_table.json", "r")
+json_object = json.load(a_file)
+json_object["customer"] = customer
+a_file = open("product_table.json", "w")
+json.dump(json_object, a_file)
+a_file.close()
 """
 
 

@@ -1,9 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { useState, useRef } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Navbar, Container, Button, Form, FormControl, Alert } from 'react-bootstrap';
 function App() {
   // fetches JSON data passed in by flask.render_template and loaded
   // in public/index.html in the script with id "data"
